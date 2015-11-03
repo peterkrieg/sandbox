@@ -1,0 +1,13 @@
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../bower_components/reset-css/reset";
+
+body{
+	background: lightgreen;
+}
+
+.container{
+	background: lightgray;
+	min-height: 500px;
+}
+
