@@ -11,6 +11,7 @@ angular.module('myApp')
 			// console.log(response.data);
 
 			deferred.resolve(response.data.results);
+			// console.log(response.data.results);
 
 
 		});

@@ -1,15 +1,27 @@
-<div>users</div>
 
-<div class="panel panel-primary" ng-repeat="user in users">
-	<div class="panel-heading">{{user.user.name.title}} {{user.user.name.first}} {{user.user.name.last}} </div>
 
-	<div class="panel-body" >
-		<h4>Address</h4>
-		<address>
-			{{user.user.location.street}} <br>
-			{{user.user.location.city}} {{user.user.location.state}} <br>
-			{{user.user.location.zip}}
-		</address>
+<div class="user-container" infinite-scroll="getUsers()" infinite-scroll-distance="0">
+	
+
+
+
+
+	<div>users</div>
+
+	<button ng-click="getUsers()">Click to get more users</button>
+
+
+
+	<div class="panel panel-primary" ng-repeat="user in users">
+		<div class="panel-heading">{{user.user.name.title}} {{user.user.name.first}} {{user.user.name.last}} </div>
+
+		<div class="panel-body" >
+			<h4>Address</h4>
+			<address>
+				{{user.user.location.street}} <br>
+				{{user.user.location.city}} {{user.user.location.state}} <br>
+				{{user.user.location.zip}}
+			</address>
 
 			<img ng-src="{{user.user.picture.medium}}" alt="" class="user">
 
@@ -24,7 +36,10 @@
 
 
 
+		</div>
+
+
 	</div>
-	
+
 
 </div>
