@@ -1,0 +1,30 @@
+{
+  "name": "bluePrintAPP",
+  "authors": [
+    "Peter Krieg <pkrieg2@gmail.com>"
+  ],
+  "description": "blueprint app",
+  "main": "app.js",
+  "moduleType": [],
+  "keywords": [
+    "javascript",
+    "css"
+  ],
+  "license": "MIT",
+  "homepage": "http://peterkrieg.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap-sass": "~3.3.5",
+    "angular": "~1.4.7",
+    "bourbon": "~4.2.6",
+    "reset-css": "~2.0.2011012602",
+    "angular-ui-router": "ui-router#~0.2.15"
+  }
+}

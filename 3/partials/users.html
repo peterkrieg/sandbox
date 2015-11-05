@@ -1,0 +1,30 @@
+<div>users</div>
+
+<div class="panel panel-primary" ng-repeat="user in users">
+	<div class="panel-heading">{{user.user.name.title}} {{user.user.name.first}} {{user.user.name.last}} </div>
+
+	<div class="panel-body" >
+		<h4>Address</h4>
+		<address>
+			{{user.user.location.street}} <br>
+			{{user.user.location.city}} {{user.user.location.state}} <br>
+			{{user.user.location.zip}}
+		</address>
+
+			<img ng-src="{{user.user.picture.medium}}" alt="" class="user">
+
+			<h3>Date of Birth</h3>
+			<p>{{user.user.dob*1000 | date: short}}</p>
+
+			<p>Cell: {{user.user.cell}}</p>
+			<p>Email: {{user.user.email}}</p>
+			<p>Username: {{user.user.username}}</p>
+
+
+
+
+
+	</div>
+	
+
+</div>
