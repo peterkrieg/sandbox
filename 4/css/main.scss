@@ -1,0 +1,20 @@
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../bower_components/reset-css/reset";
+
+body{
+	text-align: center;
+}
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+div[animal-directive]{
+	margin: 100px 0;
+}
+
+video.trailer{
+	width: 100%;
+}

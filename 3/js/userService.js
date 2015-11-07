@@ -5,7 +5,10 @@ angular.module('myApp')
 	this.getUsers = function(){
 		var deferred = $q.defer();
 
-		var url = 'https://randomuser.me/api/?results=7';
+		var numResults = 2;
+
+
+		var url = 'https://randomuser.me/api/?results='+numResults;
 
 		$http.get(url).then(function(response){
 			// console.log(response.data);

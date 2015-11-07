@@ -8,9 +8,11 @@ angular.module('myApp')
 
 
 		$scope.getUsers = function(){
+			$scope.loading = true;
 
 			userService.getUsers()
 			.then(function(response){
+				$scope.loading = false;
 				var userArr = response;
 				for(var i=0; i<userArr.length; i++){
 					$scope.users.push(userArr[i]);
@@ -22,7 +24,7 @@ angular.module('myApp')
 		};
 
 		// first function call to fill up some of array
-		// $scope.getUsers();
+		$scope.getUsers();
 
 
 		

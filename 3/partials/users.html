@@ -1,6 +1,6 @@
 
 
-<div class="user-container" infinite-scroll="getUsers()" infinite-scroll-distance="0">
+<div class="user-container" infinite-scroll="getUsers()" infinite-scroll-distance="1">
 	
 
 
@@ -8,7 +8,10 @@
 
 	<div>users</div>
 
+
 	<button ng-click="getUsers()">Click to get more users</button>
+
+	<img class="loading-svg" src="../facebook.svg" alt="" ng-show="loading">
 
 
 
